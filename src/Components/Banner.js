@@ -10,7 +10,7 @@ const Banner = ()=> {
         <div className="banner" >
             <Link to="/" className='home-logo' ></Link>
             <h1>Nuclio Cineplex</h1>
-            <h5>Tu cine más cutre</h5>
+            <h3>Tu cine más cutre</h3>
         </div>
 
     )}

@@ -11,7 +11,7 @@
     display: block;
     width: 100px;
     height: 100px;
-    background: url(https://media.glassdoor.com/sql/3425890/nuclio-digital-school-squarelogo-1646726789081.png);
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1);
     background-size: contain;
     background-color: #002069;
     border-radius: 10px;
@@ -25,10 +25,12 @@ h1 {
     color: azure;
 }
 
-h5 {
-    margin-left: 80px;
+h3 {
+    margin-left: 70px;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 25px;
     color: azure;
+    font-family: 'MayinsHandRegular';
+    font-style: italic;
 }
 
