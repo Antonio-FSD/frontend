@@ -1,16 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Head.css'
+import Browser from './Head/Browser.js';
+import Categories from './Head/Categories.js';
+import Login from './Head/Categories.js';
+import Register from './Head/Register.js';
 
-
-const Header = ()=> {
+const Head = ()=> {
     
     return (
 
-        <div className="header" >
-            <Link to="/" className='ic-logo-web' ></Link> 
+        <div className="head" >
+            <Categories />
+            <Browser />
+            <Login />
+            <Register />
         </div>
 
     )}
 
-export default Header;
+export default Head;
