@@ -1,0 +1,38 @@
+.head {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #ce2c10;
+}
+
+.categories {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.browser {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.browser-button {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile-button {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.register-button {
+    text-align: left;
+    margin-left: 10px;
+
+}
