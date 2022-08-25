@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Browser.css";
+import "../../Styles/Head.css";
 
 const Browser = () => {
   const [searchField, setSearchField] = useState("");
@@ -10,14 +10,11 @@ const Browser = () => {
   };
 
   return (
-    <div className="Browser">
-      <input
-        className="Browser"
-        type="search"
-        placeholder="Buscar producto"
-        onChange={handleChange}
-      ></input>
-      <Link to={`/search?text=${searchField}`} className="Button">Buscar</Link>
+    <div className="browser">
+      <input id="browser" type="search" placeholder="Buscar película" onChange={handleChange} />
+      <Link to={`/search?text=${searchField}`} className="browser-button">
+        Buscar
+      </Link>
     </div>
   );
 };
