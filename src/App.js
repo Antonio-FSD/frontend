@@ -14,10 +14,10 @@ function App() {
         <Head />
         <Routes>
             <Route  exact path='/' element={<Home/>} />
-            <Route  exact path='/category/:categoryId' element={''} />
+            {/* <Route  exact path='/category/:categoryId' element={''} />
             <Route  exact path='/ex' element={''} />
             <Route  exact path='/ex' element={''} />
-            <Route  exact path='/ex' element={''} />
+            <Route  exact path='/ex' element={''} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

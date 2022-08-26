@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    position: relative; 
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(67, 155, 59);
+}
+
+.footer-info {
+    overflow: hidden;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-entry {
+    overflow: hidden;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.fd-title {
+    color: #607D8B;
+    font-weight: 700; 
+    padding:30px;  
+}
+
+.list{
+    text-decoration: none;
+    color: #90A4AE;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.cinema-logo {
+    height: 100px;
+    width: 100px;
+}
