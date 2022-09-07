@@ -14,7 +14,7 @@ function App() {
         <Banner/>
         <Head />
         <Routes>
-            <Route  exact path='/' element={<Home/>} />
+            <Route exact path='/' element={<Home/>} />
             {/* <Route  exact path='' element={} />
             <Route  exact path='/ex' element={''} />
             <Route  exact path='/ex' element={''} />
