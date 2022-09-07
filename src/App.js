@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Banner from './Components/Banner.js';
 import Head from './Components/Head.js';
 import Home from './Components/Home.js';
 import Footer from './Components/Footer.js';
+import './App.css';
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         <Banner/>
         <Head />
         <Routes>
-            <Route  exact path='/' element={<Home/>} />
-            {/* <Route  exact path='/category/:categoryId' element={''} />
+            <Route exact path='/' element={<Home/>} />
+            {/* <Route  exact path='' element={} />
             <Route  exact path='/ex' element={''} />
             <Route  exact path='/ex' element={''} />
             <Route  exact path='/ex' element={''} /> */}

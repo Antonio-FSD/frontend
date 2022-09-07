@@ -6,7 +6,6 @@ import '../../Styles/Head.css';
 const ProfileButton = () => {
 
     const{userProfile} = useContext(LoginContext);
-    console.log('Hola soy el boton este es userprofile', userProfile);
 
     return userProfile && userProfile.nickName ? 
     <Link to={'/profile'} className="profile-button">{userProfile.nickName}</Link> : 
