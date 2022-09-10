@@ -1,11 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { LoginContext } from '../../Msc/LoginContext.js';
 import axios from 'axios';
-import './pages.css';
-import { LoginContext } from '../Contexts/LoginContext';
 
 const initLogin = {
-  nickName: '',
+  nickname: '',
   password: ''
 };
 
@@ -14,17 +13,17 @@ function Login () {
     const [isLoggedError, setIsLoggedError] = useState(false);
     const navigate = useNavigate();
 
-    const{setUserProfile} = useContext(LoginContext) //Llamamos al contexto 
+    const{setUserProfile} = useContext(LoginContext) 
 
     const loginUser = (e) => {
-      e.preventDefault();   //Evita que el input 'submit' envie a otra ruta.
+      e.preventDefault();  
   
       axios.post(process.env.REACT_APP_BACKEND+'/users/login', loginInfo)
 
         .then(function (response) {
           console.log("accediendo",response);
           window.localStorage.setItem('token', response.data.token);
-          setUserProfile(response.data.profile)//Actualizamos el valor del contexto
+          setUserProfile(response.data.profile)
           if(localStorage.token){
             navigate('/profile');
           } else {
@@ -51,8 +50,8 @@ function Login () {
               id="required-user" 
               name="User" 
               type="text"
-              value={loginInfo.nickName} 
-              onChange={e => setLoginInfo({...loginInfo, nickName:e.target.value })}/><br /><br />
+              value={loginInfo.nickname} 
+              onChange={e => setLoginInfo({...loginInfo, nickname:e.target.value })}/><br /><br />
             <input  
               required
               placeholder="Contraseña"
@@ -63,7 +62,7 @@ function Login () {
               onChange={e => setLoginInfo({...loginInfo, password:e.target.value})}/><br /><br />
             <input type="submit" onClick={loginUser} value="Entrar"/><br /><br />
               <Link to="/register">
-                ¿No tienes cuenta?
+                Crea tu cuenta para acceder
               </Link>
           </form>
         </div>

@@ -8,7 +8,7 @@ const MovieCard = (props) => {
             <section className="movie-card" >
                     <div className="movie-link">
                         <Link to={`/movies/${movieProp._id}`} >
-                        <img src={movieProp.cover}  className="miImages" alt=""/>   
+                        <img src={movieProp.cover}  className="movie-cover" alt=""/>   
                         </Link>
                     </div>
                     <div className="movie-title">
