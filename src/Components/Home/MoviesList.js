@@ -8,7 +8,6 @@ const MoviesList = () =>{
     const getMoviesList = async () => {
         const moviesList = await fetch(`${process.env.REACT_APP_BACKEND}/movies/list`);
         const parseMoviesList = await moviesList.json();
-        console.log("prueb list",parseMoviesList )
 
         setMoviesList(parseMoviesList);
     

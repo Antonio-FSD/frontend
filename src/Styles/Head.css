@@ -20,19 +20,35 @@
 }
 
 .browser-button {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color:#6c757d;
+    border:1px solid #6c757d;
+    border-radius:5px;
+    color:rgb(255, 255, 255);
+    margin-left:10px;
+    margin-right:10px;
+    padding:5px 5px 5px 5px;
+    text-decoration: none;
 }
 
 .profile-button {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 20px;
+    background-color:#ffffff;
+    border:1px solid #ffffff;
+    border-radius:5px;
+    color:rgb(0, 0, 0);
+    margin-left:5px;
+    margin-right:10px;
+    padding:5px 5px 5px 5px;
+    text-decoration: none;
 }
 
 .register-button {
-    text-align: left;
-    margin-left: 10px;
+    background-color:#ffffff;
+    border:1px solid #ffffff;
+    border-radius:5px;
+    color:rgb(0, 0, 0);
+    margin-left:10px;
+    margin-right:10px;
+    padding:5px 5px 5px 5px;
+    text-decoration: none;
 
 }

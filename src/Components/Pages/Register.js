@@ -1,10 +1,10 @@
 import React, { useState }from 'react';
-import axios from 'axios'; //npm i axios
-import { Link } from 'react-router-dom';
-/* import './pages.css';
- */
+import axios from 'axios'; 
+
 const initRegister = {
-  nickName: '',
+  name: '',
+  surname: '',
+  nickname: '',
   email: '',
   password: ''
 };
@@ -33,38 +33,57 @@ function Register() {
     return (
         <div className = "firstModule">
           <div className="login-image-container">
-            <img src='' alt="Wallapop" width="500" height="400" className="login-image" />
+            <img 
+              src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1' 
+              alt="Cineplex" 
+              width="350" 
+              height="250" 
+              className="login-image" />
           </div>
           <div className="secondModule">
             <form>
-              <input 
-                required 
-                placeholder="Usuario"
-                id="required-user" 
-                name="User" 
-                type="text"
-                value={registerInfo.nickname} 
-                onChange={e => setRegisterInfo({...registerInfo, nickName:e.target.value })}/><br /><br />
-              <input  
-                required 
-                placeholder="Correo"
-                id="required-mail" 
-                name="Email" 
-                type="email" 
-                value={registerInfo.email} 
-                onChange={e => setRegisterInfo({...registerInfo, email:e.target.value })}/><br /><br />
-              <input  
-                required
-                placeholder="Contraseña"
-                id="required-pass"
-                name="Contraseña"
-                type="password"
-                value={registerInfo.password}
-                onChange={e => setRegisterInfo({...registerInfo, password:e.target.value})}/><br /><br />
-              <input type="submit" onClick={createUser} value="Registrate"/><br /><br />
-                <Link to="/login">
-                  ¿Ya tienes una cuenta?
-                </Link>
+
+            <input 
+              required 
+              placeholder="Nombre"
+              id="required-name" 
+              name="Nombre" 
+              type="text"
+              value={registerInfo.name} 
+              onChange={e => setRegisterInfo({...registerInfo, name:e.target.value })}/><br /><br />
+            <input 
+              required 
+              placeholder="Apellido"
+              id="required-user" 
+              name="User" 
+              type="text"
+              value={registerInfo.nickname} 
+              onChange={e => setRegisterInfo({...registerInfo, nickname:e.target.value })}/><br /><br />
+            <input 
+              required 
+              placeholder="Usuario"
+              id="required-user" 
+              name="User" 
+              type="text"
+              value={registerInfo.nickname} 
+              onChange={e => setRegisterInfo({...registerInfo, nickname:e.target.value })}/><br /><br />
+            <input  
+              required 
+              placeholder="Correo"
+              id="required-mail" 
+              name="Email" 
+              type="email" 
+              value={registerInfo.email} 
+              onChange={e => setRegisterInfo({...registerInfo, email:e.target.value })}/><br /><br />
+            <input  
+              required
+              placeholder="Contraseña"
+              id="required-pass"
+              name="Contraseña"
+              type="password"
+              value={registerInfo.password}
+              onChange={e => setRegisterInfo({...registerInfo, password:e.target.value})}/><br /><br />
+            <input type="submit" onClick={createUser} value="Registrate"/><br /><br />
             </form>
           </div>
 
