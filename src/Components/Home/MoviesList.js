@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
+import '../../Styles/Movies.css';
 
 const MoviesList = () =>{
 
@@ -18,19 +19,12 @@ const MoviesList = () =>{
     }, [] );
     
     return (
-        <div className="container" >
-            {
-                moviesList.map((movie) => {
-                    return (
-                        <div key={movie._id} > 
-                            <MovieCard movieProp={movie}/>
-                        </div>
-                    )
-                })
-            }
-        </div> 
+        <ul className="movies-grid" >
+            {moviesList.map((movie) => (
+                <MovieCard movieProp={movie} key={movie._id} />
+            ))}
+        </ul>
     )
-
 }
 
 

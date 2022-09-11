@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../../Styles/Movies.css';
 
 const MovieCard = (props) => {
     const movieProp = props.movieProp
     return (
-       <div  id="movie-container">
-            <section className="movie-card" >
-                    <div className="movie-link">
-                        <Link to={`/movies/${movieProp._id}`} >
-                        <img src={movieProp.cover}  className="movie-cover" alt=""/>   
-                        </Link>
-                    </div>
-                    <div className="movie-title">
-                        <h1>{movieProp.title}</h1>
-                    </div>
-            </section>
-          
-        </div>
+        <li className="movie-card">
+            <Link to={`/movies/${movieProp._id}`} >
+                <img 
+                width={230}
+                height={345}
+                src={movieProp.cover} 
+                className="movie-cover" 
+                alt={movieProp.title}/>   
+            </Link>
+            <div>
+                {movieProp.title}
+            </div>
+        </li>
+            
     )
 }
 
