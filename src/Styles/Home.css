@@ -1,11 +1,8 @@
 .main-msg {
-
+    color: black;
+    margin-top: 25px;
 }
-
 .sub-main-msg {
-
-}
-
-.movies-list {
-    
+    color: black;
+    margin-bottom: 50px;
 }

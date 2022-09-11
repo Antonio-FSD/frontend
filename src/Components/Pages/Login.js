@@ -41,7 +41,13 @@ function Login () {
     return (
       <div className="first-module">
         <div className="login-image-container">
-        </div>
+            <img 
+              src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1' 
+              alt="Cineplex" 
+              width="320" 
+              height="250" 
+              className="login-image" />
+          </div>
         <div className="secondModule">
           <form>
             <input 

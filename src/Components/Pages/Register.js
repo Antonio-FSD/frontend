@@ -36,7 +36,7 @@ function Register() {
             <img 
               src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1' 
               alt="Cineplex" 
-              width="350" 
+              width="320" 
               height="250" 
               className="login-image" />
           </div>
@@ -57,8 +57,8 @@ function Register() {
               id="required-user" 
               name="User" 
               type="text"
-              value={registerInfo.nickname} 
-              onChange={e => setRegisterInfo({...registerInfo, nickname:e.target.value })}/><br /><br />
+              value={registerInfo.surname} 
+              onChange={e => setRegisterInfo({...registerInfo, surname:e.target.value })}/><br /><br />
             <input 
               required 
               placeholder="Usuario"
