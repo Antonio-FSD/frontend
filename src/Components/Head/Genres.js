@@ -4,7 +4,7 @@ import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../Styles/Head.css';
 
-const Categories = () => {
+const Genres = () => {
 
     const [ dropdown, setDropdown ] = useState(false);
 
@@ -12,30 +12,30 @@ const Categories = () => {
         setDropdown(!dropdown)
     }
 
-    const [categories, setCategories] = useState([]);
+    const [genres, setGenres] = useState([]);
 
-    const getCategories = async function() {
-        const categoriesInfo = await fetch(`${process.env.REACT_APP_BACKEND}/categories/list`);
-        const parsedInfo = await categoriesInfo.json();
+    const getGenres = async function() {
+        const genresInfo = await fetch(`${process.env.REACT_APP_BACKEND}/genres/list`);
+        const parsedInfo = await genresInfo.json();
 
-        setCategories(parsedInfo);
+        setGenres(parsedInfo);
     };
 
     useEffect(() => {
-        getCategories();
+        getGenres();
     }, []);
 
     return (
-        <div className="categories">
+        <div className="genres">
             <Dropdown isOpen={dropdown} toggle={closeDropdown}>
-                <DropdownToggle>Categorías</DropdownToggle>
+                <DropdownToggle>Géneros</DropdownToggle>
                 <DropdownMenu caret>
-                    {categories.map((category) => (
-                        <div key={category._id}>
-                            <div className="category-box">
+                    {genres.map((genre) => (
+                        <div key={genre._id}>
+                            <div className="genre-box">
                             <DropdownItem>
-                                <Link className="category-link" to={`/category/${category._id}`}>
-                                    {category.name}
+                                <Link className="genre-link" to={`/genre/${genre._id}`}>
+                                    {genre.name}
                                 </Link>
                             </DropdownItem>
                             </div>
@@ -48,4 +48,4 @@ const Categories = () => {
 
 }
 
-export default Categories;
+export default Genres;

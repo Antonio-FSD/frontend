@@ -17,8 +17,7 @@ const MovieCard = (props) => {
             <div>
                 {movieProp.title}
             </div>
-        </li>
-            
+        </li>            
     )
 }
 
