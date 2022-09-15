@@ -7,8 +7,8 @@ const ProfileButton = () => {
 
     const{userProfile} = useContext(LoginContext);
 
-    return userProfile && userProfile.nickName ? 
-    <Link to={'/profile'} className="profile-button">{userProfile.nickName}</Link> : 
+    return userProfile && userProfile.nickname ? 
+    <Link to={'/profile'} className="profile-button">{userProfile.name}</Link> : 
     <Link to={'/login'} className="profile-button">Inicia sesión</Link>
 
 }

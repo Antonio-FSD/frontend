@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { LoginContext } from '../../Msc/LoginContext.js';
 import axios from 'axios';
+import '../../Styles/Login.css'
 
 const initLogin = {
   nickname: '',
@@ -45,7 +46,7 @@ function Login () {
               src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fle-bouquet-cinema-1-logo-png-transparent.png&f=1&nofb=1' 
               alt="Cineplex" 
               width="320" 
-              height="250" 
+              height="280" 
               className="login-image" />
           </div>
         <div className="secondModule">
@@ -67,12 +68,11 @@ function Login () {
               value={loginInfo.password}
               onChange={e => setLoginInfo({...loginInfo, password:e.target.value})}/><br /><br />
             <input type="submit" onClick={loginUser} value="Entrar"/><br /><br />
-              <Link to="/register">
-                Crea tu cuenta para acceder
-              </Link>
+            <Link to="/register">
+              Crea tu cuenta para acceder
+            </Link>
           </form>
         </div>
-
          
           {isLoggedError && <p className="l_error">Ha ocurrido un error</p>}
 

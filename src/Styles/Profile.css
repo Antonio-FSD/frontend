@@ -1,0 +1,47 @@
+.InfoUser {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 200px;
+}
+.UserCard {
+  width: 550px;
+  height: 350px;
+  background-color: rgb(1, 196, 222);
+  margin-top: 30px;
+  margin-left: 20%;
+  border-radius: 5px;
+}
+.form {
+  text-align: center;
+}
+
+.titulo1 {
+  margin-left: 20%;
+}
+.titulo2 {
+  margin-left: 20%;
+}
+
+.titulo3 {
+  margin-left: 5%;
+}
+.titulo4 {
+  margin-left: 5%;
+}
+.titulo6 {
+  margin-left: 5%;
+}
+.titulo7 {
+  margin-left: 9.5%;
+}
+.logout {
+  margin-left: 85%;
+  margin-top: 4%;
+}
+.update {
+  margin-left: 20%;
+  margin-top: 2%;
+}
+.delete {
+  margin-left: 20%;
+  margin-top: 2%;
+}
