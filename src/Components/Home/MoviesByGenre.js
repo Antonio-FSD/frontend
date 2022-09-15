@@ -17,11 +17,11 @@ const MoviesByGenre = () =>{
         setMoviesByGenre(parseMoviesByGenre);
     
     };
-    //Preguntar cómo reiniciar valor
+  
     useEffect(() => {
         getMoviesByGenre();
         // eslint-disable-next-line
-    }, [] );
+    }, [moviesByGenre] );
       
     return (
         <div className="movies-grid">

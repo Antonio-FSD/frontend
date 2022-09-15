@@ -1,0 +1,24 @@
+.first-module {
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .login-image-container {
+    width: 100%;
+    display: flex;
+  }
+  
+  .login-image {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .secondModule {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
