@@ -29,7 +29,7 @@ const Genres = () => {
         <div className="genres">
             <Dropdown isOpen={dropdown} toggle={closeDropdown}>
                 <DropdownToggle>Géneros</DropdownToggle>
-                <DropdownMenu caret>
+                <DropdownMenu>
                     {genres.map((genre) => (
                         <div key={genre._id}>
                             <div className="genre-box">
