@@ -10,6 +10,7 @@ import Register from './Components/Pages/Register.js';
 import MoviesByGenre from './Components/Home/MoviesByGenre.js';
 import Profile from './Components/Pages/Profile.js';
 import Results from './Components/Pages/Results.js';
+import Details from './Components/Pages/Details.js';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route exact path='/register' element={<Register />} />
               <Route exact path='/profile' element={<Profile />} />
               <Route exact path="/search" element={<Results />} />
+              <Route exact path="/movies/:movieId" element={<Details />} />
               <Route exact path="/genre/:genreId" element={<MoviesByGenre />} /> 
           </Routes>
           <Footer />
