@@ -1,0 +1,29 @@
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.movie-cover {
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.movie-details {
+    margin: 15px;
+    height: auto;
+    font-size: 1.5rem;
+    justify-items: center;
+}
+
+.movie-title {
+    margin-top: 0;
+}
+
+iframe {
+    margin-bottom: 60px;;
+}
+strong {
+    margin-right: 20px;
+}

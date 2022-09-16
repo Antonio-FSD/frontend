@@ -3,12 +3,13 @@
   margin-bottom: 200px;
 }
 .UserCard {
-  width: 550px;
+  width: 600px;
   height: 350px;
   background-color: rgb(1, 196, 222);
   margin-top: 30px;
   margin-left: 20%;
   border-radius: 5px;
+  align-content: center;
 }
 .form {
   text-align: center;
